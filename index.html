@@ -4,31 +4,35 @@
     <title>CSS Snippet Cheatsheet</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text.css" href="assets/reset.css" />
-    <link rel="stylesheet" type="text.css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   </head>
 
   <body>
-    <header>
+    <header class="title">
       <h1>CSS Snippets</h1>
-      <p>Exact syntax examples <strong>sold</strong> here!</p>
+      <p>Exact syntax examples <strong class="gold">sold</strong> here!</p>
+      <nav>
+        <ul class="menu">
+          <li class="nav-links"><a href="#">Study Guide</a></li>
+          <li class="nav-links"><a href="#">HTML Snippet Cheatsheet</a></li>
+          <li class="nav-links">
+            <a href="#">JavaScript Snippet Cheatsheet</a>
+          </li>
+          <li class="nav-links"><a href="#">Git Terminal Cheatsheet</a></li>
+          <li class="nav-links"><a href="#">Github Cheatsheet</a></li>
+          <li class="nav-links"><a href="#">Gitlab Cheatsheet</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <a href="#">Study Guide</a>
-      <a href="#">HTML Snippet Cheatsheet</a>
-      <a href="#">JavaScript Snippet Cheatsheet</a>
-      <a href="#">Git Terminal Cheatsheet</a>
-      <a href="#">Github Cheatsheet</a>
-      <a href="#">Gitlab Cheatsheet</a>
-    </nav>
 
-    <main>
-      <div>
-        <section>
-          <header>Flexbox Row</header>
+    <main class="style">
+      <div class="snippets">
+        <section class="card">
+          <h4 class="card-header">Flexbox Row</h4>
           <p>Use these 3 properties to create a Flexbox row layout</p>
-          <pre>
-            <code>
+          <pre class="line-numbers">
+            <code class="language-css" >
               .row {
                 display: flex;
                 flex-direction: row;
@@ -38,12 +42,12 @@
           </pre>
         </section>
       </div>
-      <div>
-        <section>
-          <header>Flexbox Column</header>
+      <div class="snippets">
+        <section class="card">
+          <h4 class="card-header">Flexbox Column</h4>
           <p>Use this to create a Flexbox column layout</p>
-          <pre>
-            <code>
+          <pre class="line-numbers">
+            <code class="language-css">
               .column {
                 display: flex;
                 flex-direction: column;
@@ -52,12 +56,12 @@
           </pre>
         </section>
       </div>
-      <div>
-        <section>
-          <header>CSS Grid Layout</header>
+      <div class="snippets">
+        <section class="card">
+          <h4 class="card-header">CSS Grid Layout</h4>
           <p>Build a 12 column layout using CSS Grid</p>
-          <pre>
-            <code>
+          <pre class="line-numbers">
+            <code class="language-css">
               .grid {
                 display: grid;
                 width: 100%;
@@ -68,14 +72,14 @@
           </pre>
         </section>
       </div>
-      <div>
-        <section>
-          <header>Linear Gradients</header>
+      <div class="snippets">
+        <section class="card">
+          <h4 class="card-header">Linear Gradients</h4>
           <p>
             This will create a background linear gradient from top to bottom
           </p>
-          <pre>
-            <code>
+          <pre class="line-numbers">
+            <code class="language-css">
               .linear-gradient-background {
                 background-image: linear-gradient(
                   rgba(232, 102, 236, 0.3) 0%.
@@ -85,12 +89,12 @@
           </pre>
         </section>
       </div>
-      <div>
-        <section>
-          <header>Box Transition Glow</header>
+      <div class="snippets">
+        <section class="card">
+          <h4 class="card-header">Box Transition Glow</h4>
           <p>Use transition and box shadows to glow on hover</p>
-          <pre>
-            <code>
+          <pre class="line-numbers">
+            <code class="language-css">
               .code-card .card-header {
                 border-radius: 8px;
                 transition: all 0.5s ease-in-out;
@@ -105,15 +109,15 @@
           </pre>
         </section>
       </div>
-      <div>
-        <section>
-          <header>Overlay Card with Title</header>
+      <div class="snippets-2">
+        <section class="card">
+          <h4 class="card-header">Overlay Card with Title</h4>
           <p>
             Use position properties and negative margins to raise elements
             higher than their natural starting point
           </p>
-          <pre>
-            <code>
+          <pre class="line-numbers">
+            <code class="language-css">
               .card-header {
                 position: relative;
                 margin-top: -20px;
@@ -124,7 +128,7 @@
       </div>
     </main>
   </body>
-  <footer>
+  <footer class="sign-off">
     <h2>Made with ❤️ and CSS</h2>
   </footer>
 </html>

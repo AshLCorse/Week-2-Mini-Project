@@ -1,0 +1,115 @@
+* {
+  font-family: sans-serif, serif, Arial, "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.title {
+  background-color: darkslategray;
+}
+
+h1 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+header p {
+  padding: 10px;
+  color: antiquewhite;
+}
+
+.gold {
+  color: gold;
+}
+.gold:hover {
+  color: goldenrod;
+}
+
+nav ul {
+}
+
+.menu {
+}
+
+nav ul li {
+  float: inline-start;
+  padding: 0.5%;
+}
+
+.nav-links:hover {
+  background-color: darkolivegreen;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.style {
+  background-color: darkgray;
+}
+
+div {
+}
+
+.snippets {
+  margin: 1% 1% 0 1%;
+}
+.snippets-2 {
+  margin: 1%;
+}
+
+.card:hover {
+  background-color: darkslategray;
+}
+
+section {
+  color: antiquewhite;
+  background-color: dimgray;
+}
+
+.card {
+  flex: 1;
+  padding: 2%;
+}
+
+section h4 {
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-header {
+}
+
+pre {
+}
+
+.line-numbers {
+  color: black;
+}
+
+code {
+}
+
+.language-css {
+}
+
+footer {
+  padding: 1%;
+}
+
+.sign-off {
+  background-color: darkslategray;
+}
