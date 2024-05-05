@@ -61,6 +61,10 @@ nav ul li {
   background-color: var(--blue);
 }
 
+nav ul li a {
+  color: antiquewhite;
+}
+
 main {
   display: var(--f);
   align-items: var(--align);
