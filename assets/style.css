@@ -3,28 +3,39 @@
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana;
 }
 
+:root {
+  --green: darkolivegreen;
+  --blue: darkslategray;
+  --per1: 1%;
+  --px10: 10px;
+  --align: flex-start;
+  --f: flex;
+  --w: wrap;
+  --c: column;
+}
+
 body {
   font-size: 16px;
 }
 
 header {
   width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: var(--f);
+  flex-wrap: var(--w);
+  flex-direction: var(--c);
 }
 
 .title {
-  background-color: darkslategray;
+  background-color: var(--green);
 }
 
 h1 {
   font-size: 30px;
-  padding: 10px;
+  padding: var(--px10);
 }
 
 header p {
-  padding: 10px;
+  padding: var(--px10);
   color: antiquewhite;
 }
 
@@ -47,14 +58,14 @@ nav ul li {
 }
 
 .nav-links:hover {
-  background-color: darkolivegreen;
+  background-color: var(--blue);
 }
 
 main {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: var(--f);
+  align-items: var(--align);
+  justify-content: var(--align);
+  flex-wrap: var(--w);
 }
 
 .style {
@@ -65,14 +76,10 @@ div {
 }
 
 .snippets {
-  margin: 1% 1% 0 1%;
+  margin: var(--per1) var(--per1) 0 var(--per1);
 }
 .snippets-2 {
-  margin: 1%;
-}
-
-.card:hover {
-  background-color: darkslategray;
+  margin: var(--per1);
 }
 
 section {
@@ -82,11 +89,17 @@ section {
 
 .card {
   flex: 1;
-  padding: 2%;
+  padding: 5%;
+  border: var(--px10) solid var(--green);
+}
+
+.card:hover {
+  background-color: var(--green);
+  border: var(--px10) solid var(--blue);
 }
 
 section h4 {
-  flex-direction: column;
+  flex-direction: var(--c);
   text-align: center;
 }
 
@@ -107,9 +120,9 @@ code {
 }
 
 footer {
-  padding: 1%;
+  padding: var(--per1);
 }
 
 .sign-off {
-  background-color: darkslategray;
+  background-color: var(--green);
 }
