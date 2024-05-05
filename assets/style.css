@@ -6,6 +6,7 @@
 :root {
   --green: darkolivegreen;
   --blue: darkslategray;
+  --white: antiquewhite;
   --per1: 1%;
   --px10: 10px;
   --align: flex-start;
@@ -36,7 +37,7 @@ h1 {
 
 header p {
   padding: var(--px10);
-  color: antiquewhite;
+  color: var(--white);
 }
 
 .gold {
@@ -62,7 +63,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: antiquewhite;
+  color: var(--white);
 }
 
 main {
@@ -87,7 +88,7 @@ div {
 }
 
 section {
-  color: antiquewhite;
+  color: var(--white);
   background-color: dimgray;
 }
 
